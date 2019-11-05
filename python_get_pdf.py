@@ -1,11 +1,19 @@
 from tkinter import *
 from tkinter import messagebox
+from fpdf import FPDF
+import webbrowser
 
 root = Tk()
 root.title("GUI на Python")
 
 def get_pdf():
-    messagebox.showinfo("GUI Python", name.get() + " " + surname.get())
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+    pdf.cell(200, 10, txt="Welcome to Python!", ln=1, align="C")
+    pdf.output("example.pdf")
+    webbrowser.open("example.pdf")
+    
 
 name = StringVar()
 surname = StringVar()
