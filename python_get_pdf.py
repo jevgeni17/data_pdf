@@ -11,7 +11,7 @@ def get_pdf():
     pdf.add_page()
     pdf.set_font("Arial", size=12)
     pdf.cell(200, 10, txt="Welcome to Python!", ln=1, align="C")
-    pdf.output("example1pdf")
+    pdf.output("example1.pdf")
     webbrowser.open("example1.pdf")
 
 
