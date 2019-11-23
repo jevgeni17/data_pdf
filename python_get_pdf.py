@@ -4,7 +4,7 @@ from fpdf import FPDF
 import webbrowser
 
 root = Tk()
-root.title("GUI на Python")
+root.title("GUI на Pythonn")
 
 def get_pdf():
     pdf = FPDF()
