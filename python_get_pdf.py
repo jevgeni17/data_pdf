@@ -8,7 +8,7 @@ class HTML2PDF(FPDF, HTMLMixin):
     pass
 
 root = Tk()
-root.title("GUI на Python")
+root.title("GUI на Pythonn")
 
 def get_pdf(spacing=1):
     html = '''<h1 align="center">PDF CV</h1>
