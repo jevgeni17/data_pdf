@@ -10,7 +10,7 @@ class HTML2PDF(FPDF, HTMLMixin):
 
 
 root = Tk()
-root.title("GUI на Pythonn")
+root.title("GUI in Python")
 
 
 def get_pdf(spacing=1):
